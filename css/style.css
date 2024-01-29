@@ -1,0 +1,30 @@
+h1 {
+	background-color: rgb(155, 228, 90);
+	text-align: center;
+    color: black;
+}
+label {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.card {
+	margin: 10px;
+}
+.col1 {
+	background-color: rgb(149, 239, 197);
+}
+.col2 {
+	background-color: lightcoral;
+}
+.savedButtonSearch {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.emojis {
+	height: 70px;
+	width: 70px;
+}
+.todayCardDate {
+	font-size: 20px;
+}
