@@ -21,3 +21,30 @@ $('.search').on("click", function (event) {
 	todaysWeather();
 	fiveDayE1();
 });
+//Will create buttons based on search history 
+var previousSearchEL = $('.savedSearch');
+function getPrevious() {
+	previousSearchEL.empty();
+
+	for (let i = 0; i < savedSearch.length; i++) {
+
+		var rowEl = $('<row>');
+		var btnEl = $('<button>').text(`${savedSearch[i]}`)
+
+		rowEl.addClass('row savedButtonSearch');
+		btnEl.addClass('btn btn-warning btn-outline-dark font-weight-bold btnSaved');
+		btnEl.attr('type', 'button');
+
+		previousSearchEL.prepend(rowEl);
+		rowEl.append(btnEl);
+	} if (!city) {
+		return;
+	}
+	//Allows the buttons to start a search as well
+	$('.btnSaved').on("click", function (event) {
+		event.preventDefault();
+		city = $(this).text();
+		todaysWeather();
+		fiveDayE1();
+	});
+};
