@@ -22,7 +22,7 @@
 - The humidity
 - When a user clicks on a city in the search history they are again presented with current and future conditions for that city.
 
-The live site can be found here - 
+The live site can be found here - https://bentiger1904.github.io/Server-APIs-Weather-Dashboard/
 
 _________________________________________________________________________________________________________________
 ## Screenshot
